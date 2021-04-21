@@ -173,7 +173,8 @@ p {
   margin-right: auto;
 }
 .section-title {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  margin-top: 2.5rem;
   text-align: center;
 }
 /*
@@ -408,6 +409,7 @@ About
 ===============
 */
 /* section title added to globals */
+
 .about-title {
   text-align: left;
   margin-bottom: 2rem;
@@ -572,10 +574,10 @@ Connect
   width: 800px;
   box-shadow: 0px 1px 1px black;
   padding: 20px;
-  /* margin-top: 40px; */
+  margin-top: 40px;
   margin-bottom: 45px;
   display: grid;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: flex-start;
   border: #222;
 }
@@ -604,6 +606,56 @@ textarea {
 .contact-btn {
   align-self: center;
   margin: 6px 0;
+}
+
+@media screen and (max-width: 676px) {
+  .contact {
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .contact-form {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    background-color: var(--clr-primary-10);
+    width: 300px;
+    box-shadow: 0px 1px 1px black;
+    padding: 20px;
+    /* margin-top: 40px; */
+    margin-bottom: 45px;
+    display: grid;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    border: #222;
+  }
+
+  label {
+    display: inline-block;
+    padding: 12px 12px;
+    clear: left;
+    width: 90px;
+    text-align: right;
+    vertical-align: top;
+    margin-bottom: 15px;
+  }
+  input,
+  textarea {
+    font-size: 20px;
+    padding: 5px;
+    border: 0;
+    margin: 7px 0;
+    background: var(--clr-white);
+    border-radius: var(--radius);
+    justify-self: center;
+    display: inline-block;
+  }
+
+  .contact-btn {
+    align-self: center;
+    margin: 6px 0;
+  }
 }
 
 /*
@@ -636,7 +688,7 @@ Single Page
 ===============
 */
 .single-page {
-  background: var(--clr-primary-10);
+  background: var(--clr-white);
   min-height: calc(100vh - 5rem - 198px);
 }
 .page-info {
