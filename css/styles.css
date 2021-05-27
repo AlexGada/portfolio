@@ -465,7 +465,7 @@ Projects
 ===============
 */
 /* take the blog transition and out it on the projects on home */
-.projects-text {
+/* .projects-text {
   width: 85vw;
   max-width: 30rem;
   margin: 0 auto;
@@ -532,15 +532,14 @@ Projects
   .projects-center {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-@media screen and (min-width: 1170px) {
-  .projects-center {
+} */
+/* @media screen and (min-width: 1170px) { */
+/* .projects-center {
     grid-template-rows: 200px 200px;
     gap: 1rem;
-    padding-bottom: 2rem;
     grid-template-areas:
-      "a b"
-      "c c";
+      "a b b"
+      "a c d";
   }
   .project-img {
     height: 100%;
@@ -557,11 +556,10 @@ Projects
   .project-3 {
     grid-area: c;
   }
-  /*
   .project-4 {
     grid-area: d;
-  } */
-}
+  }
+} */
 /*
 =============== 
 Connect
@@ -774,6 +772,44 @@ Products Page
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 3rem 1rem;
 }
+
+@media screen and (min-width: 750px) {
+  .projects-grid {
+    display: grid;
+
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* -moz-column-gap: 2rem; */
+    /* column-gap: 2rem; */
+    /* grid-template-rows: 200px 200px; */
+    gap: 1rem;
+    grid-template-areas:
+      "a b b"
+      "c c d";
+  }
+  .project-img {
+    height: 100%;
+  }
+  .single-project {
+    height: 100%;
+    /* margin: 2rem 1rem 2rem 1rem; */
+  }
+  .project {
+    height: 100%;
+  }
+  .project-1 {
+    grid-area: a;
+  }
+  .project-2 {
+    grid-area: b;
+  }
+  .project-3 {
+    grid-area: d;
+  }
+  .project-4 {
+    grid-area: c;
+  }
+}
+
 /*
 =============== 
 Skills
