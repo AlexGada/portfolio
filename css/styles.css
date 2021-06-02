@@ -410,7 +410,11 @@ Hero
   border-radius: var(--radius);
   position: relative;
 }
+.skills {
+  display: inline;
+}
 /*
+
 =============== 
 About
 ===============
